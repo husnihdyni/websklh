@@ -1,44 +1,85 @@
 <template>
-  <div class="container py-5">
-    <h1 class="text-center fw-bold mb-4">Sejarah</h1>
-    <p class="text-center mt-4 description">Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan adanya SMK Negeri di daerah Kecamatan Purbaratu Kota  Tasikmalaya, terutama untuk menampung tamatan dari SLTP yang ingin melanjutkan ke SMK maka beberapa tokoh masyarakat, unsur pejabat pemerintah di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah Kota Tasikmalaya dan Pemerintah Provinsi Jawa Barat, agar berdirinya SMK Negeri di Kecamatan Purbaratu Kota Tasikmalaya.
-      Setelah melalui perjuangan yang sangat panjang dari berbagai pihak khususnya Disdik Kota Tasikmalaya dan pihak-pihak terkait lainnya sesuai prosedur dan ketentuan yang berlaku pada waktu itu dengan mengucapkan syukur Alhamdulillah akhirnya pada tahun pelajaran 2010/2011 SMK Negeri 4 Tasikmalaya mulai berdiri, pada awalnya membuka Kompetensi Keahlian Teknik Komputer dan Jaringan dengan pendaftar peserta Didik Baru pada waktu itu berjumlah 44 orang. Pada awalnya tempat belajar menumpang di SMP Negeri 17 Kota Tasikmalaya, dan sekolah induknya adalah SMK Negeri 2 Kota Tasikmalaya, Untuk Tenaga pendidik dan Tenaga Kependidikan masih dibantu sepenuhnya oleh kedua sekolah tersebut.</p>
-    <div class="image-container text-center">
-      <img src="/img/sejarah.jpeg" alt="Sejarah" class="img-fluid rounded shadow" />
+    <div class="container py-5">
+      <!-- Sejarah Section -->
+      <section id="sejarah" class="mb-5">
+        <h1 class="text-center fw-bold mb-4">SEJARAH SMK NEGERI 4 TASIKMALAYA</h1>
+        <div class="image-container text-center">
+          <img src="assets/img/sejarah.png" alt="Sejarah" class="img-fluid rounded shadow" />
+        </div>
+        <p class="text-justify mt-4 description">
+          Sejalan dengan Program Pemerintah di bidang pendidikan Menengah Kejuruan pada saat itu, yakni pemerataan akses, ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan adanya SMK Negeri di daerah Kecamatan Purbaratu Kota Tasikmalaya. Terutama untuk menampung tamatan dari SLTP yang ingin melanjutkan ke SMK maka beberapa tokoh masyarakat, unsur pejabat pemerintah di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah Kota Tasikmalaya dan Pemerintah Provinsi Jawa Barat agar berdirinya SMK Negeri di Kecamatan Purbaratu Kota Tasikmalaya.
+        </p>
+      </section>
+  
+      <!-- Identitas Sekolah Section -->
+      <section id="identitas" class="mb-5">
+        <h1 class="text-center fw-bold mb-3">Identitas Sekolah</h1>
+        <div class="text-center mb-4">
+          <img src="assets/img/logo.png" alt="Logo Sekolah" class="logo-img" />
+        </div>
+        <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><td><strong>NPSN</strong></td><td>20276063</td></tr>
+            <tr><td><strong>Tanggal SK Pendirian</strong></td><td>26 Juli 1955</td></tr>
+            <tr><td><strong>Nama Sekolah</strong></td><td>SMK Negeri 4 Tasikmalaya</td></tr>
+            <tr><td><strong>Alamat</strong></td><td>Jl. Depok</td></tr>
+            <tr><td><strong>Kelurahan</strong></td><td>Sukamenak</td></tr>
+            <tr><td><strong>Kecamatan</strong></td><td>Purbaratu</td></tr>
+            <tr><td><strong>Kota</strong></td><td>Tasikmalaya</td></tr>
+            <tr><td><strong>Kode POS</strong></td><td>46196</td></tr>
+            <tr><td><strong>Provinsi</strong></td><td>Jawa Barat</td></tr>
+            <tr><td><strong>Telepon/Fax</strong></td><td>+622651312059</td></tr>
+            <tr><td><strong>Email</strong></td><td>info@smkn4tsm.sch.id</td></tr>
+          </tbody>
+        </table>
+      </section>
+  
+      <!-- Visi Misi Section -->
+      <section id="visi-misi" class="mb-5">
+        <h1 class="text-center fw-bold mb-3">Visi Misi</h1>
+        <div class="content mt-4">
+          <h2 class="fw-bold">Visi</h2>
+          <p>TERWUJUDNYA LULUSAN YANG CERDAS, AKTIF, KOMPETITIF, ADAPTIF, DAN PRODUKTIF BERLANDASKAN IMAN DAN TAKWA</p>
+          <h2 class="fw-bold mt-4">Misi</h2>
+          <ol>
+            <li>Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik hardskill maupun softskill.</li>
+            <li>Meningkatkan dan mengembangkan aktifitas serta kreatifitas seluruh warga sekolah dalam berbagai kegiatan positif.</li>
+            <li>Mewujudkan manajemen pengelolaan yang efektif, efesien, transparan, akuntabel dan layanan prima.</li>
+            <li>Menumbuhkan dan mengembangkan potensi dan kemampuan Sumber Daya Manusia yang berdaya saing tinggi melalui berbagai kegiatan akademik maupun non-akademik.</li>
+            <li>Menyelenggarakan berbagai program kegiatan dalam upaya meningkatkan Sumber Daya Manusia yang mampu menyesuaikan dengan perkembangan.</li>
+            <li>Mengembangkan sarana prasarana dan lingkungan sekolah yang menyenangkan sebagai wadah menumbuhkembangkan daya kreasi dan inovasi untuk menghasilkan produk teknologi tepat guna.</li>
+            <li>Membangun jiwa wirausaha yang handal melalui pembelajaran Teaching Factory (TEFA) dan Kelas Industri.</li>
+            <li>Menjalin dan mengembangkan kemitraan dengan Industri dan Dunia Kerja (IDUKA) serta lembaga lainnya yang relevan.</li>
+            <li>Menanamkan dan membudayakan sikap dan perilaku yang baik pada aktivitas di sekolah maupun dalam kehidupan sehari-hari.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Jurusan Section -->
+      <section id="jurusan" class="mb-5">
+        <h1 class="text-center fw-bold mb-3">Jurusan di SMKN 4 Tasikmalaya</h1>
+        <div class="galeri">
+          <div class="galeri-item">
+            <img src="assets/img/pplg.png" alt="PPLG" class="galeri-img" />
+            <p class="galeri-caption">PPLG</p>
+          </div>
+          <div class="galeri-item">
+            <img src="assets/img/tkjt.png" alt="TJKT" class="galeri-img" />
+            <p class="galeri-caption">TJKT</p>
+          </div>
+          <div class="galeri-item">
+            <img src="assets/img/tbsm.png" alt="TSM" class="galeri-img" />
+            <p class="galeri-caption">TSM</p>
+          </div>
+          <div class="galeri-item">
+            <img src="assets/img/dkv.png" alt="DKV" class="galeri-img" />
+            <p class="galeri-caption">DKV</p>
+          </div>
+          <div class="galeri-item">
+            <img src="assets/img/toi.png" alt="TOI" class="galeri-img" />
+            <p class="galeri-caption">TOI</p>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
 </template>
-
-<script>
-export default {
-  name: 'sejarah',
-};
-</script>
-
-<style scoped>
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.image-container {
-  margin-top: 2rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-img:hover {
-  transform: scale(1.05);
-}
-</style>

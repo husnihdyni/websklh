@@ -1,71 +1,117 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <h5 style="background-color: white;" class="text-white text-center rounded-3 p-2 m-3">
-          Ekstrakurikuler <b>SMKN 4 TASIKMALAYA</b>
-        </h5>
-      </div>
-      <section class="galeri">
-        <div class="galeri-item" v-for="(item, index) in eskulitem" :key="index">
-          <img :src="item.img" :alt="item.caption" class="galeri-img" />
-          <p class="galeri-caption">{{ item.caption }}</p>
+    <div class="container">
+        <h4 class="mt-5">Ekstrakurrikuler <br> <span class="text-primary">Siswa</span></h4>
+        <div class="row m-3 mt-5 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card mt-3 bg-light rounded-4">
+                    <img src="~/assets/img/pmr1.png" class="card-img-top rounded-2 mt-3" alt="img-artikel">
+                    <div class="card-body text-center p-2 mb-3 mt-3">
+                        <h6>Pmr</h6>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card mt-3 bg-light rounded-4">
+                    <img src="~/assets/img/paskibra.png" class="card-img-top rounded-2 mt-3" alt="img-artikel">
+                    <div class="card-body text-center p-2 mb-3 mt-3">
+                        <h6>paskibra</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card mt-3 bg-light rounded-4">
+                    <img src="~/assets/img/voli1.jpg" class="card-img-top rounded-2 mt-3" alt="img-artikel">
+                    <div class="card-body text-center p-2 mb-3 mt-3">
+                        <h6>voli</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card mt-3 bg-light rounded-4">
+                    <img src="~/assets/img/badminton.png" class="card-img-top rounded-2 mt-3" alt="img-artikel">
+                    <div class="card-body text-center p-2 mb-3 mt-3">
+                        <h6>badminton</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card mt-3 bg-light rounded-4">
+                    <img src="~/assets/img/futsal.jpg" class="card-img-top rounded-2 mt-3" alt="img-artikel">
+                    <div class="card-body text-center p-2 mb-3 mt-3">
+                        <h6>futsal</h6>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
     </div>
-  </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      galeriItems: [
-        { img: "/assets/img/voli1.jpg", caption: "Voli" },
-        { img: "/assets/img/pmr1.png", caption: "PMR" },
-        { img: "/assets/img/futsal.jpg", caption: "Futsal" },
-        { img: "/assets/img/paskibra.png", caption: "Paskibra" },
-        { img: "/assets/img/pd.png", caption: "Perisai Diri" },
-        { img: "/assets/img/badminton.png", caption: "Badminton" },
-        { img: "/assets/img/basket.jpg", caption: "Basket" },
-      ],
-    };
-  },
-};
+
+<script setup>
+useHead({ title: "Ekstrakurikuler - SMKN 4 Tasikmalaya" })
+
 </script>
+
 <style scoped>
-.galeri {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  margin: 20px 0;
-  padding: 0 10px;
+h4, h6, .btn {
+    font-family: "Poppins", serif;
 }
 
-.galeri-item {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.3s;
+h4 {
+    margin-left: 95px;
 }
 
-.galeri-item:hover {
-  transform: scale(1.05);
+.card {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffff;
 }
 
-.galeri-img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
+.btn {
+    font-size: 12px;
+    width: 150px;
+    border: 2px solid #ffff;
+
 }
 
-.galeri-caption {
-  color: #333;
-  margin-top: 10px;
-  font-size: 1rem;
+.card-img-top {
+    width: 150px;
+    margin: auto;
 }
+
+.text-primary {
+    color: #1F60A0 !important;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 890px) {
+    h4 {
+        margin-left: 30px;
+    }
+
+    .card-img-top {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h4 {
+        margin-left: 35px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-img-top {
+        width: 50%;
+    }
+
+    h6 {
+        font-size: small;
+    }
+}
+
+
 </style>
 
 
